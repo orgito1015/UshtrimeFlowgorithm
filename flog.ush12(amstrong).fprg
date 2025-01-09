@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flog.ush12(amstrong)"/>
+        <attribute name="authors" value="Reldi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-06 07:19:56 PM"/>
+        <attribute name="created" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMDY7MDc6MDg6NDIgUE07Mjg1Nw=="/>
+        <attribute name="edited" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMDY7MDc6MTk6NTYgUE07MTsyOTcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nr, n, a, sh, m, caunt, i" type="Integer" array="False" size=""/>
+            <input variable="nr"/>
+            <assign variable="n" expression="nr"/>
+            <assign variable="a" expression="nr"/>
+            <assign variable="sh" expression="0"/>
+            <assign variable="caunt" expression="0"/>
+            <while expression="nr&gt;0">
+                <assign variable="nr" expression="nr/10"/>
+                <assign variable="caunt" expression="caunt+1"/>
+            </while>
+            <for variable="i" start="1" end="caunt" direction="inc" step="1">
+                <assign variable="m" expression="n%10"/>
+                <assign variable="n" expression="n/10"/>
+                <assign variable="sh" expression="sh+m^caunt"/>
+            </for>
+            <if expression="sh==a">
+                <then>
+                    <output expression="&quot;po  n eshte nr amstrong&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Jo n nuk eshte numer  amstrong&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
