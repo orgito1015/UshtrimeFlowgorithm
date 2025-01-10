@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flog.ush2.makin llogaritse."/>
+        <attribute name="authors" value="Reldi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-11-25 06:12:12 PM"/>
+        <attribute name="created" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjQtMTEtMjU7MDU6NDM6MzkgUE07Mjg2MQ=="/>
+        <attribute name="edited" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjQtMTEtMjU7MDY6MTI6MTIgUE07MTsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;hidh numrin e pare:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;hidh numrin e dyte:&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="karakter" type="String" array="False" size=""/>
+            <output expression="&quot;Hidh nje nga karakteret +,-,%,*,/,^&quot;" newline="True"/>
+            <input variable="karakter"/>
+            <if expression="karakter==&quot;+&quot;">
+                <then>
+                    <output expression="&quot;shuma eshte&quot;" newline="True"/>
+                    <output expression="a+b" newline="True"/>
+                </then>
+                <else>
+                    <if expression="karakter==&quot;-&quot;">
+                        <then>
+                            <output expression="a-b" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="karakter==&quot;%&quot;">
+                                <then>
+                                    <output expression="a%b" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="karakter==&quot;*&quot;">
+                                        <then>
+                                            <output expression="a*b" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="karakter==&quot;/&quot;">
+                                                <then>
+                                                    <if expression="b&gt;0">
+                                                        <then>
+                                                            <output expression="a/b" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;numri dyte  duhet me i madh se 0&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else>
+                                                    <if expression="karakter==&quot;^&quot;">
+                                                        <then>
+                                                            <output expression="&quot;fuqia e numrave eshte&quot;&amp;a^b" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
