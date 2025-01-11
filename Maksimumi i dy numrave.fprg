@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Maksimumi i dy numrave"/>
+        <attribute name="authors" value="Roberto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-11 04:39:38 PM"/>
+        <attribute name="created" value="Um9iZXJ0bzsgUk9CRVJUTy1QQzsgMjAxNS0xMS0zMDsgMDQ6NDg6MzUgOyAyNjg2"/>
+        <attribute name="edited" value="Um9iZXJ0bzsgUk9CRVJUTy1QQzsgMjAxNS0xMi0xMDsgMDc6MjE6MjYgOyAyNjc5"/>
+        <attribute name="edited" value="bGVrYW87REVTS1RPUC02UEFGVDI4OzIwMjUtMDEtMTE7MDQ6Mzk6MzggUE07MTsyOTU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x &gt; y">
+                <then>
+                    <output expression="&quot;Maksimumi eshte: &quot; &amp; x" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Maksimumi eshte: &quot; &amp; y" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
