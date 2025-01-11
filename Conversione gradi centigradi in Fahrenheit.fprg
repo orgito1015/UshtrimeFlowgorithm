@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="1.7">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Roberto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2016-01-20 08:32:38 "/>
+        <attribute name="created" value="Um9iZXJ0bzsgUk9CRVJUTy1QQzsgMjAxNi0wMS0yMDsgMDg6Mjg6MDcgOyAyNjg2"/>
+        <attribute name="edited" value="Um9iZXJ0bzsgUk9CRVJUTy1QQzsgMjAxNi0wMS0yMDsgMDg6MzI6MzggOyAyNjg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celsius" type="Real" array="False" size="" variables="celsius"/>
+            <declare name="Fahrenheit" type="Real" array="False" size="" variables="Fahrenheit"/>
+            <output expression="&quot;[IT] Inserire temperatura C&#176;:&quot; &amp; ToChar(13) &amp; ToChar(10) &amp; &quot;[EN] Enter temp in Celsius: &quot;"/>
+            <input variable="celsius"/>
+            <assign variable="fahrenheit" expression="(1.8 * celsius) + 32"/>
+            <output expression="&quot;[IT] Temperatura in Fahrenheit:&quot; &amp; ToChar(13) &amp; ToChar(10) &amp; &quot;[EN] Temperature in Fahrenheit: &quot;"/>
+            <output expression="fahrenheit"/>
+        </body>
+    </function>
+</flowgorithm>
