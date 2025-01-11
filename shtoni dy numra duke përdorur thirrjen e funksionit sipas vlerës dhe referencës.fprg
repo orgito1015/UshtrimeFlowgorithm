@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="shtoni dy numra duke p&#235;rdorur thirrjen e funksionit sipas vler&#235;s dhe referenc&#235;s"/>
+        <attribute name="authors" value="Reldi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-11 04:59:38 PM"/>
+        <attribute name="created" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMTE7MDQ6NTE6MDAgUE07Mjg0Mg=="/>
+        <attribute name="edited" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMTE7MDQ6NTk6MzggUE07MTsyOTY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hidh numrin e pare&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Hidh numrin e dyte&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="add(n1,n2)" newline="True"/>
+        </body>
+    </function>
+    <function name="add" type="Integer" variable="result">
+        <parameters>
+            <parameter name="first" type="Integer" array="False"/>
+            <parameter name="second" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="result" type="Integer" array="False" size=""/>
+            <assign variable="result" expression="first+second"/>
+        </body>
+    </function>
+</flowgorithm>

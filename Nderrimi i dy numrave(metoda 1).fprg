@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Nderrimi i dy numrave(metoda 1)"/>
+        <attribute name="authors" value="Reldi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-11 04:05:27 PM"/>
+        <attribute name="created" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMTE7MDM6NDI6MDIgUE07Mjg0Mw=="/>
+        <attribute name="edited" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMTE7MDQ6MDU6MjcgUE07MTsyOTU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Nderrimi i dy numrave"/>
+            <declare name="a, b, temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;Hidh numrin e pare:&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Hidh numrin e dyte:&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="Proqesi i kembimit te vlerave"/>
+            <assign variable="temp" expression="a"/>
+            <assign variable="a" expression="b"/>
+            <assign variable="b" expression="temp"/>
+            <output expression="&quot;Tani numri i pare eshte:&quot;&amp;a" newline="True"/>
+            <output expression="&quot;Tani numri i pare eshte:&quot;&amp;b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

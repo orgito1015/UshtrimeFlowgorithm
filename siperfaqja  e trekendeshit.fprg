@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="siperfaqja  e trekendeshit"/>
+        <attribute name="authors" value="Reldi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-11 04:21:57 PM"/>
+        <attribute name="created" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMTE7MDQ6MTQ6MDggUE07Mjg0OQ=="/>
+        <attribute name="edited" value="UmVsZGk7REVTS1RPUC1KTzdVTTJNOzIwMjUtMDEtMTE7MDQ6MjE6NTcgUE07MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="siperfaja  e trekendeshit  me formulen          s=(b*h)/2"/>
+            <declare name="baza, lartesia" type="Integer" array="False" size=""/>
+            <input variable="baza"/>
+            <input variable="lartesia"/>
+            <output expression="&quot;siperfaqja e trekendesheit eshte:&quot;" newline="True"/>
+            <output expression="(baza*lartesia)/2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
