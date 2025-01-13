@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pavan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-14 09:48:35 AM"/>
+        <attribute name="created" value="cGF2YW47UEFWQU47MjAyMi0wMS0xNDswOToyNTozOCBBTTsyMTc2"/>
+        <attribute name="edited" value="cGF2YW47UEFWQU47MjAyMi0wMS0xNDswOTo0ODozNSBBTTsyOzIyODc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, x, count" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the size of array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;Enter the number you want to search&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="count" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="a[i]=x">
+                    <then>
+                        <assign variable="count" expression="count+1"/>
+                        <output expression="&quot;The position is &quot; &amp;(i+1)" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The number of times the element occured in array is&quot; &amp;count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

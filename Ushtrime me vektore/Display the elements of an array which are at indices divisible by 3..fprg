@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="vidul"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-07 09:28:25 AM"/>
+        <attribute name="created" value="dmlkdWw7REVTS1RPUC1QOUlSNUM5OzIwMjItMDEtMDY7MTA6NTQ6MjMgQU07Mjg1Nw=="/>
+        <attribute name="edited" value="dmlkdWw7REVTS1RPUC1QOUlSNUM5OzIwMjItMDEtMDc7MDk6MjA6MTAgQU07NDsyOTY2"/>
+        <attribute name="edited" value="UmFtIEFrYXRoeWE7VEhFUkFNOzIwMjItMDEtMDc7MDk6Mjg6MjUgQU07MTsyODUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter size of array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter elements of array&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <if expression="i%3==0">
+                    <then>
+                        <output expression="i&amp;&quot;:&quot;&amp;a[i]" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

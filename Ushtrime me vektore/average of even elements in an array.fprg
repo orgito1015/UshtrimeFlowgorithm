@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ishu2"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-17 02:40:48 PM"/>
+        <attribute name="created" value="aXNodTI7TEFQVE9QLUdSTjNHVUMxOzIwMjItMDEtMDc7MDk6NTk6MTQgQU07MjgyNQ=="/>
+        <attribute name="edited" value="aXNodTI7TEFQVE9QLUdSTjNHVUMxOzIwMjItMDEtMDc7MDk6NTk6MjEgQU07MTtpc2h1MjtMQVBUT1AtR1JOM0dVQzE7MjAyMi0wMS0wNzswOTo1Mzo1MSBBTTtxNl9wb3NfYXJyLmZwcmc7NzM2Ng=="/>
+        <attribute name="edited" value="aXNodTI7TEFQVE9QLUdSTjNHVUMxOzIwMjItMDEtMDc7MTA6MDI6MzUgQU07MTsyOTE2"/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswMjo0MDo0OCBQTTsxOzIyMjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, s, c" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter array size&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="num" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter array elements&quot;" newline="True"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="s" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="num[i]"/>
+                <if expression="num[i]%2==0">
+                    <then>
+                        <assign variable="c" expression="c+1"/>
+                        <assign variable="s" expression="s+num[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="avg" expression="s/c"/>
+            <output expression="&quot;Average of even numbers in the array=&quot;&amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

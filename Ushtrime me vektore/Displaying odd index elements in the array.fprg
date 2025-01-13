@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-17 02:37:52 PM"/>
+        <attribute name="created" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswMjozMzo0MCBQTTsyMTEz"/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswMjozNzo1MiBQTTsxOzIyMjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the size of the array.&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter the values of the elements of the array.&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="i%2=0">
+                    <then/>
+                    <else>
+                        <output expression="&quot;a[&quot;&amp;i&amp;&quot;]=&quot;&amp;a[i]" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

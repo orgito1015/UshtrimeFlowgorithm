@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-17 07:50:16 AM"/>
+        <attribute name="created" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswNzo0NDoyMiBBTTsyMTA1"/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswNzo1MDoxNiBBTTsxOzIyMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, counte, counto, N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of elements.&quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="number" type="Integer" array="True" size="N"/>
+            <output expression="&quot;Enter the values of the elements in order.&quot;" newline="True"/>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <input variable="number[i]"/>
+            </for>
+            <assign variable="counte" expression="0"/>
+            <assign variable="counto" expression="0"/>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <if expression="number[i]%2=0">
+                    <then>
+                        <assign variable="counte" expression="counte+1"/>
+                    </then>
+                    <else>
+                        <assign variable="counto" expression="counto+1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;The number of even elements: &quot; &amp;counte &amp;&#13;&#10;&quot; The number of odd elements: &quot; &amp;counto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

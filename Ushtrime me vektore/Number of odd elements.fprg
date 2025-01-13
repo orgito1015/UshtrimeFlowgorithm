@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-17 06:57:52 AM"/>
+        <attribute name="created" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswNjo0NTo1MyBBTTsyMTA5"/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswNjo1Nzo1MiBBTTsxOzIyMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, count, N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of elements.&quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="number" type="Integer" array="True" size="N"/>
+            <output expression="&quot;Enter the elements.&quot;" newline="True"/>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <input variable="number[i]"/>
+            </for>
+            <assign variable="count" expression="0"/>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <if expression="number[i]%2!=0">
+                    <then>
+                        <assign variable="count" expression="count+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The total number of odd elements: &quot; &amp;count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

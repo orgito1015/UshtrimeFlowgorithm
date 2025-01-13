@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hruday venkat"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-14 10:05:52 AM"/>
+        <attribute name="created" value="aHJ1ZGF5IHZlbmthdDtMQVBUT1AtVlZDMUE1SDg7MjAyMi0wMS0xNDswOTo0NjozNiBBTTszNjQ2"/>
+        <attribute name="edited" value="aHJ1ZGF5IHZlbmthdDtMQVBUT1AtVlZDMUE1SDg7MjAyMi0wMS0xNDsxMDowNTo1MiBBTTsyOzM3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter size of an array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter elements&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;array is&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <for variable="j" start="i+1" end="n-1" direction="inc" step="1">
+                    <if expression="a[i]&gt;a[j]">
+                        <then>
+                            <assign variable="b" expression="a[i]"/>
+                            <assign variable="a[i]" expression="a[j]"/>
+                            <assign variable="a[j]" expression="b"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot;the array in ascending order is&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

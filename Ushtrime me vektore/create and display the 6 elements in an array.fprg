@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-17 08:35:30 AM"/>
+        <attribute name="created" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswODozMzowOSBBTTsyMTA5"/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswODozNTozMCBBTTsxOzIyMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="num" type="Integer" array="True" size="6"/>
+            <output expression="&quot;Enter the values of the elements of the array.&quot;" newline="True"/>
+            <for variable="i" start="0" end="5" direction="inc" step="1">
+                <input variable="num[i]"/>
+            </for>
+            <output expression="&quot;The elements in the array are:&quot;" newline="True"/>
+            <for variable="i" start="0" end="5" direction="inc" step="1">
+                <output expression="num[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

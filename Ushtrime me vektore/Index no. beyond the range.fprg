@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-16 08:22:38 AM"/>
+        <attribute name="created" value="TGVub3ZvO0xBUFRPUC1CM01IMDRDTDsyMDIyLTAxLTA3OzEwOjE1OjAxIEFNOzI4OTY="/>
+        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1CM01IMDRDTDsyMDIyLTAxLTA3OzEwOjE1OjA0IEFNOzE7TGVub3ZvO0xBUFRPUC1CM01IMDRDTDsyMDIyLTAxLTA3OzEwOjEwOjE4IEFNO1Byb2plY3QgNDAuZnByZzs3MzYw"/>
+        <attribute name="edited" value="TGVub3ZvO0xBUFRPUC1CM01IMDRDTDsyMDIyLTAxLTA3OzEwOjI0OjU0IEFNOzE7MzAxMg=="/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMi0xNjswODoyMjozOCBBTTsxOzIyMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the size of array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter the elements of the array&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <output expression="&quot;Enter the element no. to be dispalyed&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="c&gt;n">
+                <then>
+                    <output expression="&quot;The Entered Number is beyond the Given Range&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="a[c-1]" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

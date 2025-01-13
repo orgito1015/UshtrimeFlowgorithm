@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dell"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-14 09:46:33 AM"/>
+        <attribute name="created" value="RGVsbDtERVNLVE9QLTVOSTgyNk07MjAyMi0wMS0xNDswOTowNzoyMiBBTTsyNjcw"/>
+        <attribute name="edited" value="RGVsbDtERVNLVE9QLTVOSTgyNk07MjAyMi0wMS0xNDswOTo0NjozMyBBTTsxOzI3ODM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the size of array&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <declare name="b" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter the element of array&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="b[i]" expression="a[i]"/>
+            </for>
+            <output expression="&quot;Array A is&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="a[i]" newline="True"/>
+            </for>
+            <output expression="&quot;ARRAY B is&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="b[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

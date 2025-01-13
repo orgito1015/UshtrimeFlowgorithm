@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-17 05:39:11 PM"/>
+        <attribute name="created" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswNzo1MDoyMSBBTTsyMTAx"/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswNTozOToxMSBQTTsyOzIyMjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, count, N" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <output expression="&quot;Enter the number of elements.&quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="number" type="Integer" array="True" size="N"/>
+            <output expression="&quot;Enter the values of the elements in order.&quot;" newline="True"/>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <input variable="number[i]"/>
+            </for>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <if expression="number[i]%3=0 or number[i]%5=0">
+                    <then>
+                        <if expression="number[i]%6!=0">
+                            <then>
+                                <assign variable="number[i]" expression="-1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <output expression="number[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

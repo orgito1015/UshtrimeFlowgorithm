@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nandini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-07 08:55:07 AM"/>
+        <attribute name="created" value="TmFuZGluaTtMQVBUT1AtMDczOEo0TFM7MjAyMi0wMS0wNzswODo1MDoxNyBBTTsyOTcz"/>
+        <attribute name="edited" value="TmFuZGluaTtMQVBUT1AtMDczOEo0TFM7MjAyMi0wMS0wNzswODo1NTowNyBBTTsyOzMwODY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, count" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n"/>
+            <assign variable="count" expression="0"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the values in the array&quot;" newline="True"/>
+                <input variable="a[i]"/>
+                <if expression="a[i]%4=0">
+                    <then>
+                        <assign variable="count" expression="count+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The number of elements divisible by 4 in the array are: &quot;&amp;count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Swaraj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-07 09:39:39 AM"/>
+        <attribute name="created" value="U3dhcmFqO1JJU0hJU0FJOzIwMjItMDEtMDc7MDk6MDg6MjEgQU07MjQ4Mw=="/>
+        <attribute name="edited" value="U3dhcmFqO1JJU0hJU0FJOzIwMjItMDEtMDc7MDk6MTU6NDEgQU07MTtTd2FyYWo7UklTSElTQUk7MjAyMi0wMS0wNzswODo1MTowNSBBTTtBcnJheXNfZGl2aXNpYmxlXzQuZnByZzs3NDkx"/>
+        <attribute name="edited" value="U3dhcmFqO1JJU0hJU0FJOzIwMjItMDEtMDc7MDk6Mzk6MzkgQU07NDsyNjA3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, count, yesno" type="Integer" array="False" size=""/>
+            <declare name="numbers" type="Integer" array="True" size="100"/>
+            <assign variable="count" expression="0"/>
+            <for variable="i" start="0" end="100" direction="inc" step="1">
+                <output expression="&quot;Enter numbers&quot;" newline="True"/>
+                <input variable="numbers[i]"/>
+                <output expression="&quot;Enter 0 to exit input loop or 1 to continue input&quot;" newline="True"/>
+                <input variable="yesno"/>
+                <assign variable="count" expression="count+1"/>
+                <if expression="yesno==0">
+                    <then>
+                        <assign variable="i" expression="101"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Length of Array is&quot;" newline="True"/>
+            <output expression="count" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

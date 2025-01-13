@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-17 09:11:24 AM"/>
+        <attribute name="created" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswOTowMTo0MSBBTTsyMTAx"/>
+        <attribute name="edited" value="QWRtaW47UEVBQ0g7MjAyMi0wMS0xNzswOToxMToyNCBBTTsxOzIyMTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, a, b, z" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of elements.&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="num" type="Integer" array="True" size="n"/>
+            <output expression="&quot;Enter the values of the elements.&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="num[i]"/>
+            </for>
+            <output expression="&quot;Enter the indices of the 2 elements to be swapped.&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="z" expression="num[a]"/>
+            <assign variable="num[a]" expression="num[b]"/>
+            <assign variable="num[b]" expression="z"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="num[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

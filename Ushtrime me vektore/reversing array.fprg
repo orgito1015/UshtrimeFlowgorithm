@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-01-07 10:00:23 AM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtKRUVCQU47MjAyMi0wMS0wNzswOTo1MzozMSBBTTszMDYy"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtKRUVCQU47MjAyMi0wMS0wNzswOTo1NDozNCBBTTs3O0FkbWluaXN0cmF0b3I7SkVFQkFOOzIwMjItMDEtMDc7MDk6NTA6MDAgQU07c2VhcmNoaW5nIGFuIGVsZW1lbnQgaW4gYXJyYXkuZnByZzs5NjE3"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtKRUVCQU47MjAyMi0wMS0wNzsxMDowMDoyMyBBTTsxOzMxNTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter no. of numbers&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="num" type="Integer" array="True" size="n"/>
+            <output expression="&quot;enter number&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="num[i]"/>
+            </for>
+            <for variable="i" start="n-1" end="0" direction="dec" step="1">
+                <output expression="num[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
