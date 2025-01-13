@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Kopjo nje vektore ne nje tjeter vekore"/>
+        <attribute name="authors" value="Roberto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-13 07:31:40 PM"/>
+        <attribute name="created" value="Um9iZXJ0bzsgUk9CRVJUT19JNzsgMjAxNi0wMS0zMTsgMDg6MTE6MzYgOyAyNzEz"/>
+        <attribute name="edited" value="Um9iZXJ0bzsgUk9CRVJUT19JNzsgMjAxNi0wMS0zMTsgMDg6MTY6MjkgOyAyNzIw"/>
+        <attribute name="edited" value="bGVrYW87REVTS1RPUC02UEFGVDI4OzIwMjUtMDEtMTM7MDc6MzE6NDAgUE07MTsyOTQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ssize" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot; Enter the total number of elements&quot;" newline="True"/>
+            <input variable="ssize"/>
+            <declare name="arr1" type="Integer" array="True" size="ssize"/>
+            <declare name="arr2" type="Integer" array="True" size="ssize"/>
+            <output expression="&quot; Enter the elements of list :&quot;" newline="True"/>
+            <for variable="i" start="0" end="ssize - 1" direction="inc" step="1">
+                <output expression="&quot; Element &quot; &amp;(i + 1) &amp;&quot;:&quot;" newline="True"/>
+                <input variable="arr1[i]"/>
+            </for>
+            <for variable="i" start="0" end="ssize - 1" direction="inc" step="1">
+                <assign variable="arr2[i]" expression="arr1[i]"/>
+            </for>
+            <output expression="&quot;The copied array is :&quot;" newline="True"/>
+            <for variable="i" start="0" end="ssize - 1" direction="inc" step="1">
+                <output expression="arr2[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

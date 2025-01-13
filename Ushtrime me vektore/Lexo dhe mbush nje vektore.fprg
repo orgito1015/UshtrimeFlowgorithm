@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lexo dhe mbush nje vektore"/>
+        <attribute name="authors" value="Roberto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-13 07:25:18 PM"/>
+        <attribute name="created" value="Um9iZXJ0bzsgUk9CRVJUT19JNzsgMjAxNi0wMS0zMTsgMDg6MzY6NTEgOyAyNzE3"/>
+        <attribute name="edited" value="Um9iZXJ0bzsgUk9CRVJUT19JNzsgMjAxNi0wMS0zMTsgMDg6Mzk6MzcgOyAyNzI0"/>
+        <attribute name="edited" value="bGVrYW87REVTS1RPUC02UEFGVDI4OzIwMjUtMDEtMTM7MDc6MjU6MTggUE07MTsyOTU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ssize" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot; Enter the total number of elements&quot;" newline="True"/>
+            <input variable="ssize"/>
+            <declare name="arr" type="Integer" array="True" size="ssize"/>
+            <output expression="&quot; Enter the elements of list :&quot;" newline="True"/>
+            <for variable="i" start="0" end="ssize - 1" direction="inc" step="1">
+                <output expression="&quot;Element &quot; &amp;(i + 1) &amp;&quot;:&quot;" newline="True"/>
+                <input variable="arr[i]"/>
+            </for>
+            <output expression="&quot; Elements of array :&quot;" newline="True"/>
+            <for variable="i" start="0" end="ssize - 1" direction="inc" step="1">
+                <output expression="arr[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

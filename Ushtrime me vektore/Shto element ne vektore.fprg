@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Shto element ne vektore"/>
+        <attribute name="authors" value="Roberto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-01-13 07:36:44 PM"/>
+        <attribute name="created" value="Um9iZXJ0bzsgUk9CRVJUT19JNzsgMjAxNi0wMS0zMTsgMDg6MTg6MjIgOyAyNzE1"/>
+        <attribute name="edited" value="Um9iZXJ0bzsgUk9CRVJUT19JNzsgMjAxNi0wMS0zMTsgMDg6Mjk6MjMgOyAyNzE4"/>
+        <attribute name="edited" value="bGVrYW87REVTS1RPUC02UEFGVDI4OzIwMjUtMDEtMTM7MDc6MzY6NDQgUE07MTsyOTU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ssize" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="location" type="Integer" array="False" size=""/>
+            <declare name="ele" type="Integer" array="False" size=""/>
+            <declare name="MaxSize" type="Integer" array="False" size=""/>
+            <assign variable="MaxSize" expression="100"/>
+            <declare name="arr" type="Integer" array="True" size="MaxSize"/>
+            <output expression="&quot; Enter the total number of elements&quot;" newline="True"/>
+            <input variable="ssize"/>
+            <output expression="&quot; Enter the elements of list :&quot;" newline="True"/>
+            <for variable="i" start="0" end="ssize - 1" direction="inc" step="1">
+                <output expression="&quot;Element &quot; &amp; (i + 1) &amp;&quot;:&quot;" newline="True"/>
+                <input variable="arr[i]"/>
+            </for>
+            <output expression="&quot; Enter the elements to be inserted :&quot;" newline="True"/>
+            <input variable="ele"/>
+            <output expression="&quot; Enter the location :&quot;" newline="True"/>
+            <input variable="location"/>
+            <for variable="i" start="ssize" end="location" direction="dec" step="1">
+                <assign variable="arr[i]" expression="arr[i - 1]"/>
+            </for>
+            <assign variable="ssize" expression="ssize + 1"/>
+            <assign variable="arr[location - 1]" expression="ele"/>
+            <for variable="i" start="0" end="ssize - 1" direction="inc" step="1">
+                <output expression="arr[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
